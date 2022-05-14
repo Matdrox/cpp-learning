@@ -2,7 +2,7 @@
 
 int main() {
     int points = 85;
-    
+
     if (points < 50) {
         std::cout << "Grade: F" << std::endl;
     } else if (points < 100) {
@@ -11,7 +11,7 @@ int main() {
 
     int tempPoints = points / 10;
 
-    switch(tempPoints) {
+    switch (tempPoints) {
         case 9:
             std::cout << "Grade: A" << std::endl;
             break;
@@ -26,7 +26,7 @@ int main() {
             break;
         default:
             std::cout << "Grade: F" << std::endl;
-        
     }
+
     return 0;
 }
