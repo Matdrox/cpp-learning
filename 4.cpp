@@ -9,6 +9,13 @@ void swap_values(int &var1, int &var2) {
     var2 = temp;
 }
 
+// const means that the variable is unchangeable
+void add_lists(const int first[], const int second[], int total[], int length) {
+    for (int count = 0; count < length; count++) {
+        total[count] = first[count] + second[count];
+    }
+}
+
 int main() {
     int num1 = 4;
     int num2 = 5;
