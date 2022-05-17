@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
 #include <unordered_map>
+#include <unordered_set>
 #include <vector>
 using namespace std;
 
-void arrays() {  // Static
+void arrays() {  // Static (fixed size)
     int array1[] = {2, 3, 4, 5};
     for (int i = 0; i < 7; i++) {
         // Even if the loop is outside the array length, it will still continue and not throw an error
@@ -40,13 +41,29 @@ void strings() {
 
 void dicts() {
     unordered_map<string, string> numbersLatin;
+    numbersLatin = {{"one", "unus"}, {"two", "duo"}, {"three", "tres"}, {"four", "quattuor"}, {"five", "quinque"}};
+    for (auto i = numbersLatin.begin(); i != numbersLatin.end(); i++) {
+        cout << i->first << ":";    // i->first: key
+        cout << i->second << endl;  // i->second: value
+    }
+}
+
+void sets() {
+    unordered_set<int> set1 = {3, 6, 4, 1, 10};
+    int num = 4;
+    if (set1.find(num) == set1.end()) {  // If set.find() can't find num before reaching set.end(), num doesn't exist
+        cout << "Number " << num << " is not in the set." << endl;
+    } else {
+        cout << "Number " << num << " is in the set." << endl;
+    }
 }
 
 int main() {
     // arrays();
     // vectors();
     // strings();
-    dicts();
-    //  cout << __cplusplus <<  endl;
+    // dicts();
+    sets();
+    //  cout << __cplusplus <<  endl;  // Check C++ Version
     return 0;
 }
