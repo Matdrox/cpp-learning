@@ -7,6 +7,9 @@
         "list": "cpp",
         "vector": "cpp",
         "xhash": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "xiosbase": "cpp"
     }
 }
