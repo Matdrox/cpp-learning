@@ -20,10 +20,21 @@ int main() {
     out_stream.open("another_file.txt");  // Creates empty file of overwrites old file
     out_stream << 25 << endl;
     out_stream << 15 << endl;
-    
 
     in_stream.close();
     out_stream.close();
+
+    int inputn;
+
+    while (!in_stream.eof()) {  // While End of File has not been reached
+        break;
+    }
+
+    while (in_stream >> inputn) {  // While there is content to be read
+        break;
+    }
+
+    char filename[16];  // Reserves 16 characters for a file name
 
     return 0;
 }
