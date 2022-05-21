@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-    ifstream in_stream;
-    ofstream out_stream;
+    ifstream in_stream;   // Input stream: read text from file
+    ofstream out_stream;  // Output stream: write text to file
 
     // set(): Set flags (Member function)
     cout.setf(ios::fixed);      // Use fixed point instead of scientific notation
@@ -25,6 +25,9 @@ int main() {
     out_stream.close();
 
     int inputn;
+    in_stream >> inputn;
+    in_stream >> inputn;  // The program remembers what character you're on!
+    in_stream >> inputn;
 
     while (!in_stream.eof()) {  // While End of File has not been reached
         break;
@@ -34,7 +37,8 @@ int main() {
         break;
     }
 
-    char filename[16];  // Reserves 16 characters for a file name
+    // C-strings should only be used when working with file names
+    char filename[16];  // C-string: Reserves 15 characters for a file name (+ \0)
 
     return 0;
 }
