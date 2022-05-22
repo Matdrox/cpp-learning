@@ -1,6 +1,8 @@
+#include <iostream>
 #include "CTurtle/CTurtle.hpp"
+using namespace std;
 
-// namespace ct = cturtle;
+namespace ct = cturtle;
 
 int main(int argc, char** argv) {
     // ct::TurtleScreen scr;
