@@ -16,5 +16,7 @@ int main(int argc, char** argv) {
     // }
     // turtle.end_fill();
     // scr.bye();
+
+    cout << "I CAN'T USE TURTLE LIBRARY WHYYY" << endl;
     return 0;
 }
