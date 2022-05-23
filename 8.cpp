@@ -2,7 +2,7 @@
 #include "CTurtle/CTurtle.hpp"
 using namespace std;
 
-namespace ct = cturtle;
+// namespace ct = cturtle;
 
 int main(int argc, char** argv) {
     // ct::TurtleScreen scr;
@@ -17,6 +17,6 @@ int main(int argc, char** argv) {
     // turtle.end_fill();
     // scr.bye();
 
-    cout << "I CAN'T USE TURTLE LIBRARY WHYYY" << endl;
+    cout << "I CAN'T USE TURTLE LIBRARY WHYYY" << " but this should work..." << endl;
     return 0;
 }
